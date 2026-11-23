@@ -1,0 +1,6 @@
+{
+  "name": "Micélio Studio — Simulador de Physarum",
+  "description": "Simulador de crescimento de fungos Physarum em tempo real via WebGL2 com reconstrução por contraste de imagem P&B e renderização de vídeo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

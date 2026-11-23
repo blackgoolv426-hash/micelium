@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html,
+  body {
+    background-color: #07090e;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom precision slider styling */
+input[type="range"].studio-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #1e293b;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"].studio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #22d3ee;
+  border: 2px solid #07090e;
+  cursor: pointer;
+  transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.12s ease;
+}
+
+input[type="range"].studio-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #67e8f9;
+}
+
+input[type="range"].studio-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #22d3ee;
+  border: 2px solid #07090e;
+  cursor: pointer;
+  transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.12s ease;
+}
+
+/* Subtle custom scrollbars for control column */
+.studio-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.studio-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.studio-scroll::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+.studio-scroll::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
